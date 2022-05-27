@@ -256,42 +256,42 @@ def winner():
     elif first_line[0] == first_line[1] == first_line[2] == "0":
         winner_text = "Вы проиграли!"
 
-    if second_line[0] == second_line[1] == second_line[2] == "X":
+    elif second_line[0] == second_line[1] == second_line[2] == "X":
         winner_text = "Вы победили!"
     elif second_line[0] == second_line[1] == second_line[2] == "0":
         winner_text = "Вы проиграли!"
 
-    if third_line[0] == third_line[1] == third_line[2] == "X":
+    elif third_line[0] == third_line[1] == third_line[2] == "X":
         winner_text = "Вы победили!"
     elif third_line[0] == third_line[1] == third_line[2] == "0":
         winner_text = "Вы проиграли!"
     #⬆️
-    if first_line[0] == second_line[0] == third_line[0] == "X":
+    elif first_line[0] == second_line[0] == third_line[0] == "X":
         winner_text = "Вы победили!"
     elif first_line[0] == second_line[0] == third_line[0] == "0":
         winner_text = "Вы проиграли!"
 
-    if first_line[1] == second_line[1] == third_line[1] == "X":
+    elif first_line[1] == second_line[1] == third_line[1] == "X":
         winner_text = "Вы победили!"
     elif first_line[1] == second_line[1] == third_line[1] == "0":
         winner_text = "Вы проиграли!"
 
-    if first_line[2] == second_line[2] == third_line[2] == "X":
+    elif first_line[2] == second_line[2] == third_line[2] == "X":
         winner_text = "Вы победили!"
     elif first_line[2] == second_line[2] == third_line[2] == "0":
         winner_text = "Вы проиграли!"
     #↘️
-    if first_line[0] == second_line[1] == third_line[2] == "X":
+    elif first_line[0] == second_line[1] == third_line[2] == "X":
         winner_text = "Вы победили!"
     elif first_line[0] == second_line[1] == third_line[2] == "0":
         winner_text = "Вы проиграли!"
 
     #↗️
-    if first_line[2] == second_line[1] == third_line[0] == "X":
+    elif first_line[2] == second_line[1] == third_line[0] == "X":
         winner_text = "Вы победили!"
     elif first_line[2] == second_line[1] == third_line[0] == "0":
         winner_text = "Вы проиграли!"
 
     #🤝
-    if turns_left == 0:
+    elif turns_left == 0 and (winner_text != "Вы проиграли!" or winner_text != "Вы победили!"):
         winner_text = "Ничья!"
